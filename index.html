@@ -7,13 +7,32 @@
   <link href="./main.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-    <h1>Help me choose between...</h1>
+    <h1 class="background-color">Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Write option">
       </div>
         <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
       <button class="GoButton"><img src="bild.jpg" alt="Eva" height="32" width="42">Go!</button>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+        $(function(){
+          $('.resultSection').hide()
+
+          var add_option = function() {
+            $('.inputs').append('<input></input>')
+          }
+
+          $('.addOption').click(add_option)
+
+          var background_color = function() {
+            $('html').color('yellow')
+
+            $('.background-color').click(background_color)
+        }
+        })
+      </script>
   </body>
 </html>
