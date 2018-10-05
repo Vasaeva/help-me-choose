@@ -29,10 +29,21 @@ input{
 html{
   background-color: #3FBF8A;
 }
+html.pink {
+    background-color: #ffe6eb;
+}
 .addOption:hover{
   color: darkred;
   text-decoration:underline;
 }
 .GoButton:hover{
   cursor:grab;
+}
+
+.resultSection{
+  font-size: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
